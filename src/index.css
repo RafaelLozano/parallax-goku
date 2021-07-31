@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+.parallax-container{
+    position: s;
+    width: 100%;
+    height: 100vh;
+    perspective: 8px;
+    perspective-origin: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.image{
+    position: absolute;
+    margin: 0 auto;
+    transform: 0 50%;
+}
+.image-background{
+    position: absolute;
+    height: auto;
+    width: 50%;
+    transform-origin: 0 50%;
+    transform: translateZ(0px) scale(1);
+}
+.image-midle{
+    width: 100%;
+    height: 100%;
+    transform: translateZ(5px) scale(.375);
+    transform-origin: 50%;
+}
+.image-foreground{
+    position: absolute;
+    transform-origin: 50%;
+    transform: translateZ(2px) scale(.75);
+    top: 100vh;
+    left: 50%;
+}
+.card{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    background-color: brown;
+    color: white;
+    transform: rotate(-20px);
+    top: 100%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
